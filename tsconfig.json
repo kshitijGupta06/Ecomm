@@ -1,0 +1,29 @@
+{
+  "compilerOptions": {
+    "target": "ES6",                      // Set the ECMAScript target version
+    "module": "commonjs",                  // Module system to use (CommonJS for Node.js)
+    "lib": ["ES6"],                        // Specify library files
+    "declaration": true,                   // Generate .d.ts files
+    "outDir": "./dist",                    // Redirect output structure to the `dist` folder
+    "rootDir": "./src",                    // Root folder for your TypeScript files
+    "strict": true,                        // Enable all strict type-checking options
+    "esModuleInterop": true,               // Allow default imports from modules with no default export
+    "skipLibCheck": true,                  // Skip type checking of all declaration files (.d.ts)
+    "forceConsistentCasingInFileNames": true, // Ensure file names are case-consistent
+    "strictPropertyInitialization": false, // Disable strict property initialization checks
+    "moduleResolution": "node",            // Module resolution strategy (use Node.js style)
+    "resolveJsonModule": true,             // Allows importing JSON files as modules
+    "isolatedModules": true,               // Ensure that each file is treated as a separate module
+    "noUnusedLocals": true,                // Report errors for unused locals
+    "noUnusedParameters": true,             // Report errors for unused parameters
+    "emitDecoratorMetadata": true,  // Add this line
+    "experimentalDecorators": true  // Add this line
+  },
+  "include": [
+    "src/**/*"                             // Include all files in the `src` folder
+  ],
+  "exclude": [
+    "node_modules",                        // Exclude the `node_modules` folder
+    "dist"                                 // Exclude the `dist` folder
+  ]
+}
